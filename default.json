@@ -1,0 +1,14 @@
+{
+  "width_m": 80,
+  "height_m": 60,
+  "spacing_m": 20,
+  "heading_deg": 0,
+  "altitude_m": 30,
+  "speed_m_s": 5,
+  "acceptance_radius_m": 2,
+  "min_start_battery_pct": 60,
+  "min_battery_pct": 25,
+  "mission_timeout_s": 900,
+  "landing_timeout_s": 180,
+  "connection": "udp://:14540"
+}

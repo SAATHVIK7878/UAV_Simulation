@@ -1,0 +1,10 @@
+{
+  "width_m": 80,
+  "height_m": 60,
+  "spacing_m": 20,
+  "altitude_m": 50,
+  "speed_m_s": 8,
+  "min_start_battery_pct": 60,
+  "min_battery_pct": 25,
+  "mission_timeout_s": 600
+}

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uav-survey-toolkit"
+version = "0.1.0"
+description = "Survey-mission planning, safe execution, telemetry logging and analysis for PX4 SITL (disaster-area coverage scenarios)."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+# MAVSDK 4.x is a different (native) API. This toolkit targets the gRPC-based API,
+# which is what `mavsdk<4` (and the renamed `mavsdk-grpc`) provide.
+fly = ["mavsdk<4"]
+plot = ["matplotlib"]
+dev = ["pytest"]
+
+[project.scripts]
+uav-survey = "uav_survey.cli:main"
+
+[tool.setuptools]
+packages = ["uav_survey"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
